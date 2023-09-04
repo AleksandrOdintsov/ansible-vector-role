@@ -8,7 +8,8 @@ Role Variables
 
 |vars|descriptions|
 |---------|-------------------|
-| vector_version | Version of Vector to install |
+| vector_version_rpm |RPM version of Vector to install |
+| vector_version_deb |DEB version of Vector to install |
 
 
 Example Playbook
