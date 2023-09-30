@@ -1,17 +1,21 @@
 node("linux"){
+    parameters {
+        booleanParam defaultValue: false, description: 'Произвести дополнительую проверку', name: 'prod_run'
+    }
     stage("Git checkout"){
         git url: 'https://github.com/aragastmatb/example-playbook.git'
     }
-    stage("Sample define secret_check"){
-        secret_check=false
+    stage("Show parameter value") {
+        script {
+            echo "Parameter value: ${params.prod_run}"
+        }
     }
     stage("Run playbook"){
-        if (secret_check){
+        if (params.prod_run) {
             sh 'ansible-playbook site.yml -i inventory/prod.yml'
         }
-        else{
-            echo 'ansible-playbook site.yml --check  --diff -i inventory/prod.yml'
+        else {
+            sh 'ansible-playbook site.yml --check  --diff -i inventory/prod.yml'
         }
-        
     }
 }
