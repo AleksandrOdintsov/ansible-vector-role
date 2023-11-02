@@ -29,4 +29,4 @@ GPL-2.0-or-later
 Author Information
 ------------------
 
-Arutyun Galustyan
+Aleksandr Odintsov
