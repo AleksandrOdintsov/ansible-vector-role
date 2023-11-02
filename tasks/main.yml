@@ -69,7 +69,6 @@
     #   become: true
     #   ansible.builtin.command: "/usr/bin/vector --config-yaml vector.yml --watch-config"
     #   background: yes
-
     - name: Check vector process PID
       shell: >
         echo -n $(pgrep vector)
@@ -83,4 +82,3 @@
     - name: Run command in background
       ansible.builtin.shell:
         cmd: "/usr/bin/vector --config-yaml vector.yml --watch-config &"
-
