@@ -1,6 +1,7 @@
 ---
 dependency:
   name: galaxy
+role_name_check: 1
 driver:
   name: podman
 platforms:
