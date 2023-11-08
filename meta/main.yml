@@ -1,6 +1,7 @@
 galaxy_info:
   author: Odintsov Aleksandr
-  role_name: Role  vector
+  role_name: Ansible_vector
+  galaxy_name: vector
   namespace: git
   description: Role install vector
   company: Home
