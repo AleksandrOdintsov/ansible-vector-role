@@ -1,5 +1,7 @@
 galaxy_info:
-  author: Arutyun Galustyan
+  author: Odintsov Aleksandr
+  role_name: Role  vector
+  namespace: git
   description: Role install vector
   company: Home
 
