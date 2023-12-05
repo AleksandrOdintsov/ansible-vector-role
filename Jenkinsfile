@@ -9,7 +9,7 @@ pipeline {
                   pwd
                   id
                   molecule test
-                  exit 0''' 
+                  ''' 
       }
     }
   }
