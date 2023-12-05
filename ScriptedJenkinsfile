@@ -1,6 +1,6 @@
 node("linux"){
     parameters {
-        booleanParam defaultValue: false, description: 'Пропустить проверки', name: 'prod_run'
+        booleanParam defaultValue: false, description: '--check  --diff = off?', name: 'prod_run'
     }
     stage("Git checkout"){
         git url: 'https://github.com/aragastmatb/example-playbook.git'
